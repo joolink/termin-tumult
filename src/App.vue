@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
+import iCalReader from './components/iCalReader.vue';
+
 </script>
 
 <template>
@@ -9,6 +11,9 @@ import HelloWorld from './components/HelloWorld.vue'
     </div>
   </header>
 
+  <main>
+    <iCalReader />
+  </main>
 </template>
 
 <style scoped>
