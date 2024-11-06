@@ -1,18 +1,21 @@
 <script setup lang="ts">
+import Day from './components/calender/Day.vue';
+import Year from './components/calender/Year.vue';
 import HelloWorld from './components/HelloWorld.vue'
-import iCalReader from './components/iCalReader.vue';
+import iCalReader from './components/iCalReader.vue'
+
 
 </script>
 
 <template>
-  <header>
+  <!-- <header>
     <div class="wrapper">
       <HelloWorld msg="Coming appointments..." />
     </div>
-  </header>
+  </header> -->
 
   <main>
-    <iCalReader />
+    <Year />
   </main>
 </template>
 
