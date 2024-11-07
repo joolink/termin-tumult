@@ -22,11 +22,10 @@ const props = defineProps<Props>();
 
 <style scoped>
 .day {
-  display: inline-block;
   margin: 5px;
-  width: 50px; /* Breite für das Kästchen */
+  width: 200px; /* Breite für das Kästchen */
   height: 70px; /* Höhe für das Kästchen */
-  text-align: center;
+  text-align: start;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -40,9 +39,9 @@ const props = defineProps<Props>();
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   height: 100%;
-  padding: 0px;
+  padding: 50px;
 }
 
 .day-number {

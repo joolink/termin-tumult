@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Day from './components/calender/Day.vue';
+import Day2 from './components/calender/Day2.vue';
 import Year from './components/calender/Year.vue';
 import HelloWorld from './components/HelloWorld.vue'
 import iCalReader from './components/iCalReader.vue'
@@ -15,7 +16,8 @@ import iCalReader from './components/iCalReader.vue'
   </header> -->
 
   <main>
-    <Year />
+    <!-- <Year /> -->
+     <Day2 />
   </main>
 </template>
 

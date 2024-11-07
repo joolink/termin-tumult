@@ -19,13 +19,7 @@
   <script lang="ts" setup>
   import { defineProps } from 'vue';
   import Day from './Day.vue';
-  
-  interface DayData {
-    dayNumber: number;
-    dayName: string;
-    color?: string;
-    isHighlighted?: boolean;
-  }
+  import type { DayData } from './DayData'; // Importiere das Interface aus types.ts
   
   interface Props {
     weekNumber: number;
@@ -37,13 +31,13 @@
   
   <style scoped>
   .week {
-    border: 2px solid #cccccc; /* Leichter grauer Rahmen */
-    border-radius: 10px; /* Abgerundete Ecken */
-    padding: 10px;
-    margin: 10px 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+    border: 1px solid #cccccc; /* Leichter grauer Rahmen */
+    border-radius: 1px; /* Abgerundete Ecken */
+    padding: 1px;
+    margin: 1px 0;
+    box-shadow: 0 2px 100px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
     background-color: #f9f9f9; /* Helles Hintergrund */
-    width: 120px; /* Schmalere Breite der Woche */
+    width: 20%; /* Schmalere Breite der Woche */
   }
   
   .week-header {
