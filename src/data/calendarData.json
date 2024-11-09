@@ -1,0 +1,145 @@
+{
+    "Year": 2023,
+    "quarters": [
+      {
+        "quarter": 1,
+        "months": [
+          {
+            "month": 1,
+            "name": "January",
+            "weeks": [
+              {
+                "week": 1,
+                "days": [
+                  {
+                    "day": 1,
+                    "dayInYear": 1,
+                    "annotations": [
+                      {
+                        "name": "NewYear",
+                        "color": "Blue"
+                      }
+                    ]
+                  },
+                  {
+                    "day": 2,
+                    "dayInYear": 2,
+                    "annotations": []
+                  },
+                  {
+                    "day": 3,
+                    "dayInYear": 3,
+                    "annotations": [
+                      {
+                        "name": "Birthday",
+                        "color": "Yellow"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "week": 2,
+                "days": [
+                  {
+                    "day": 8,
+                    "dayInYear": 8,
+                    "annotations": []
+                  },
+                  {
+                    "day": 9,
+                    "dayInYear": 9,
+                    "annotations": [
+                      {
+                        "name": "Holiday",
+                        "color": "Red"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "month": 2,
+            "name": "February",
+            "weeks": [
+              {
+                "week": 5,
+                "days": [
+                  {
+                    "day": 1,
+                    "dayInYear": 32,
+                    "annotations": []
+                  },
+                  {
+                    "day": 2,
+                    "dayInYear": 33,
+                    "annotations": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "quarter": 2,
+        "months": [
+          {
+            "month": 3,
+            "name": "March",
+            "weeks": [
+              {
+                "week": 9,
+                "days": [
+                  {
+                    "day": 1,
+                    "dayInYear": 60,
+                    "annotations": []
+                  },
+                  {
+                    "day": 2,
+                    "dayInYear": 61,
+                    "annotations": [
+                      {
+                        "name": "Anniversary",
+                        "color": "Green"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "month": 4,
+            "name": "April",
+            "weeks": [
+              {
+                "week": 13,
+                "days": [
+                  {
+                    "day": 1,
+                    "dayInYear": 91,
+                    "annotations": []
+                  },
+                  {
+                    "day": 2,
+                    "dayInYear": 92,
+                    "annotations": [
+                      {
+                        "name": "Easter",
+                        "color": "Purple"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

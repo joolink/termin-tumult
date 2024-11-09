@@ -22,9 +22,11 @@ const props = defineProps<Props>();
 
 <style scoped>
 .day {
-  margin: 5px;
-  width: 200px; /* Breite für das Kästchen */
-  height: 70px; /* Höhe für das Kästchen */
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 10px;
+
   text-align: start;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
