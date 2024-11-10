@@ -3,18 +3,8 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 import Month from './Month.vue';
 import {addDays, getDate} from 'date-fns';
 
+import { generateRandomDataArray } from '../scripts/exampleData.js';
 
-const getRandomNumber = (limit) => {
-  return Math.floor(Math.random() * limit);
-};
-
-const getRandomColor = () => {
-  const h = getRandomNumber(360);
-
-  return `hsl(${h}deg, 100%, 90%)`;
-};
-
-const exampleDay = new Date(2024, 5, 1);
 
 const meta: Meta<typeof Month> = {
   component: Month,
@@ -38,33 +28,6 @@ export const Primary: Story = {
     template: '<Month v-bind="args" />',
   }),
   args: {
-    monthData:[
-    {
-        day: exampleDay,
-        annotations:[
-            {
-            name: "feiertag",
-            color: getRandomColor()
-            }
-        ]
-    },
-    {
-        day: addDays(exampleDay,1),
-        annotations:[
-            {
-            name: "feiertag",
-            color: getRandomColor()
-            },
-            {
-            name: "urlaub",
-            color: getRandomColor()
-            },
-            {
-            name: "seminar",
-            color: getRandomColor()
-            }
-        ]
-    }
-    ]
-  },
+    monthData: generateRandomDataArray(10,new Date(2024, 2, 1),new Date(2024, 2, 31))
+  }
 };

@@ -13,7 +13,7 @@
   
   <script setup>
   import { computed } from 'vue';
-  import { getMonth, getWeek, isSameDay, startOfWeek, addDays } from 'date-fns';
+  import { format, getMonth, getWeek, isSameDay, startOfWeek, addDays } from 'date-fns';
   import Day from './Day.vue';
 
   const props = defineProps({
@@ -50,7 +50,7 @@
  
   const currentDay = computed(() => props.weekData[0]?.day);
   const dayArray = computed(() => getWeekFromDay(currentDay.value));
-  const currentWeek = getWeek(currentDay.value)
+  const currentWeek = format(currentDay.value,"II")
 
   </script>
   
@@ -67,6 +67,7 @@
   }
 
   .week-number{
+    font-family: 'Courier New', Courier, monospace;
     display: flex;
     border: 1px solid black;
     font-weight: bold;
