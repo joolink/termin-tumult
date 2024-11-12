@@ -13,7 +13,7 @@
     "format": "prettier --write src/",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "test": "node --no-warnings --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "dependencies": {
     "date-fns": "^4.1.0",
